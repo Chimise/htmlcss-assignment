@@ -1,0 +1,146 @@
+/** Global Resets **/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 93%;
+  margin: 0px auto;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar span {
+  color: white;
+}
+
+.navbar a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  background-color: #db184c;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 800;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 3rem 0rem;
+}
+
+.hero .hero-content {
+  width: 93%;
+  max-width: 34rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-content a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #588adb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+main {
+  width: 93%;
+  max-width: 42rem;
+  margin: 1rem auto 2rem;
+}
+
+#sub-header {
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 0.4rem 1.5rem;
+  border: 1px solid #588adb;
+  color: #588adb;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  min-width: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn-active {
+  background-color: #588adb;
+  color: white;
+}
+
+.btn-group .btn {
+  margin-left: 1rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.images .img {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .images .img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .images {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .images .img {
+    width: 150px;
+  }
+}
